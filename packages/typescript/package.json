@@ -1,0 +1,19 @@
+{
+  "name": "@gigachads.de/typescript",
+  "version": "1.0.0",
+  "license": "WTFPL",
+  "author": "gigachads-de",
+  "private": true,
+  "packageManager": "pnpm@10.12.1",
+  "type": "module",
+  "homepage": "https://gigachads.de",
+  "url": "https://github.com/gigachads-de/gigachads.de/issues",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/gigachads-de/gigachads.de.git",
+    "directory": "packages/typescript"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

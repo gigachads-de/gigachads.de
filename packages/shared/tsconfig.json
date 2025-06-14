@@ -1,0 +1,14 @@
+{
+  "extends": "@gigachads.de/typescript/node.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "@types/*": ["./types/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", ".turbo"]
+}

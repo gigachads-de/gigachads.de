@@ -1,0 +1,37 @@
+{
+  "name": "@gigachads.de/shared",
+  "version": "1.0.0",
+  "license": "WTFPL",
+  "author": "gigachads-de",
+  "private": true,
+  "packageManager": "pnpm@10.12.1",
+  "type": "module",
+  "homepage": "https://gigachads.de",
+  "url": "https://github.com/gigachads-de/gigachads.de/issues",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/gigachads-de/gigachads.de.git",
+    "directory": "packages/shared"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "exports": {
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/types/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsc -p tsconfig.json --watch",
+    "build": "tsc --build",
+    "clean": "rimraf dist .tsbuildinfo .turbo node_modules",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@gigachads.de/typescript": "workspace:*"
+  },
+  "dependencies": {
+    "zod": "^3.25.57"
+  }
+}

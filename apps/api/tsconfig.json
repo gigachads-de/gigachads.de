@@ -1,0 +1,19 @@
+{
+  "extends": "@gigachads.de/typescript/node.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "@index": ["./index.js"],
+      "@configs/*": ["./configs/*"],
+      "@modulesV1/*": ["./modules/v1/*"],
+      "@middlewaresV1/*": ["./middlewares/v1/*"],
+      "@typesV1/*": ["./types/v1/*"],
+      "@utils/*": ["./utils/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", ".turbo"]
+}

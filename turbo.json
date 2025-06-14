@@ -1,0 +1,31 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "dangerouslyDisablePackageManagerCheck": false,
+  "cacheDir": ".turbo/cache",
+  "ui": "tui",
+  "envMode": "strict",
+  "tasks": {
+    "build": {
+      "interactive": false,
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "interactive": true,
+      "dependsOn": ["@gigachads.de/shared#build", "^build"],
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "interactive": false,
+      "cache": false
+    },
+    "clean": {
+      "interactive": false,
+      "cache": false
+    },
+    "typecheck": {
+      "interactive": false,
+      "cache": false
+    }
+  }
+}
