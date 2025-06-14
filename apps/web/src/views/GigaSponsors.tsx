@@ -10,7 +10,7 @@ interface gigaSponsor {
 const gigaSponsors: gigaSponsor[] = [
   {
     uuid: "b2338903-d0bc-4d7c-af82-4a272eac953f",
-    name: "Zimmerei Holzbau Blümelein",
+    name: "Zimmerei Holzbau Blümlein",
     emoji: "🌲❤️",
     destination: "https://holzbau-bluemlein.de/"
   },
